@@ -5,7 +5,7 @@ pipeline {
     }
     environment {
         //shegerlab2024.jfrog.io/petclinic
-        DOCKER_IMAGE_NAME = "shegerlab2024.jfrog.io/petclinic/petclinic:1.0.0"
+        DOCKER_IMAGE_NAME = "mdevops2024.jfrog.io/petclinic/petclinic:1.0.0"
     }
 
     parameters {
@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git branch: 'master', url: "https://github.com/shegerbootcamp/docker-lab.git"
+                git branch: 'master', url: "https://github.com/meki63/docker-lab.git"
             }
         }
 
