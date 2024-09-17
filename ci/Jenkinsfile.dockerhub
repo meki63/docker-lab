@@ -31,7 +31,7 @@ pipeline {
                     sh 'mvn compile' // Compile the code without running tests
                 }
             }
-        }ter
+        }
 
         stage('Build Package') {
             steps {
